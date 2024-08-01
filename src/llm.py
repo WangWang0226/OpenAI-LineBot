@@ -28,7 +28,7 @@ class LLM:
             model=self.model,
             messages=self.prompt.generate_prompt(),
         )
-        return response.choices[0].message['content']
+        return response.choices[0].message.content
 
 
     def add_msg(self, text, role):
