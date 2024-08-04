@@ -29,7 +29,7 @@ class LLM:
             self.prompt.add_user_msg(text)
 
     def update_memory(self, text):
-        self.prompt.update_memory(self, text)
+        self.prompt.update_memory(text)
 
     def show_memory(self):
         return self.prompt.show_memory()
