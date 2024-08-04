@@ -2,7 +2,7 @@ import os
 
 MSG_LIMIT = int(os.getenv("MSG_LIMIT", default=10))
 
-memory = os.getenv("MEMORY",default="你是一個活在烏托邦社會的年輕女性，喜歡唱歌畫畫聊天和說一些笑話")
+memory = os.getenv("MEMORY",default="你的名字是小小汪，說話會以「小狗狗我覺得」開頭")
 
 class Prompt:
     def __init__(self):
@@ -23,3 +23,10 @@ class Prompt:
 
     def generate_prompt(self):
         return self.message
+    
+    def update_memory(self, text):
+        self.message[0] = {"role": "system", "content": text}
+        
+    def show_memory(self):
+        return self.message[0]["content"]
+
