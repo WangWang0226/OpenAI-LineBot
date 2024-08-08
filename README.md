@@ -1,8 +1,13 @@
-# Line Character
+# Customized Line AI chatbot
 
 ## Overview
+This project involves developing an intelligent chatbot for the Line app using the ChatGPT-4o-mini model. The chatbot offers interactive and intelligent responses, enhancing user experience. Key features include:
 
-Incorporating state-of-the-art natural language processing deep learning models into Line's messaging application, allowing users to customize chatbot personalities, histories and backgrounds enabling more human-like interactions.
+- Dynamic Response Generation: Utilizes ChatGPT-4o-mini for generating dynamic responses.
+- User Command Recognition: Recognizes specific user commands to control the chatbot's operations.
+- Customized Memory: Allows users to set specific prompts as environment variables, ensuring consistent AI responses for each user query.
+- Message Processing: Handles user messages and generates AI responses when the bot is active.
+- Seamless Integration: Built with Flask and integrated with Line Messaging API for robust performance.
 
 ## Project Structure
 
@@ -11,31 +16,8 @@ Incorporating state-of-the-art natural language processing deep learning models 
 ├── README.md
 ├── requirements.txt
 ├── src
-│   ├── index.py
+│   ├── main.py
 │   ├── llm.py
 │   └── prompt.py
 └── vercel.json
 ```
-
-## Quick Start
-
-### 1. Clone project
-
-```bash
-git clone git@github.com:Lucien1999s/Line-Character.git
-```
-
-### 2. Environment Settings Tutorial
-
-See the following link to know more
-
-[line上的人工智能-ai開發篇](https://medium.com/@lucien1999s.pro/line上的人工智能-ai開發篇-99b6168812cc)
-
-
-## Features
-
-- Allow users to customize chatbot personalities with backgrounds, histories and speech patterns
-
-- Enable chatbots to reside within Line and join group chats for interactions
-
-- Utilize actions and thoughts denoted by *asterisks as a way to define chatbot interactions beyond text conversations
