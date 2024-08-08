@@ -9,6 +9,10 @@ This project involves developing an intelligent chatbot for the Line app using t
 - Message Processing: Handles user messages and generates AI responses when the bot is active.
 - Seamless Integration: Built with Flask and integrated with Line Messaging API for robust performance.
 
+## Architecture
+![image](https://github.com/user-attachments/assets/db6119c1-8e45-4746-9b2c-1afeff943f31)
+
+
 ## Project Structure
 
 ```
